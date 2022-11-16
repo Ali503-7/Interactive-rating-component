@@ -1,0 +1,142 @@
+body {
+  font-family: 'Overpass', sans-serif;
+background-color: #121417;
+  background-image: linear-gradient(1deg, #121417 25%, #77431b 50%, #121417 74%);
+  font-size: 15px;
+}
+
+.contaner {
+  position: relative;
+}
+
+.face,
+.back {
+  background-color: hsl(213, 19%, 18%);
+  width: 300px;
+  height: 330px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 30px;
+  padding: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  backface-visibility: visible;
+  position: absolute;
+}
+
+.nani {
+  z-index: 1 !important;
+}
+
+
+.back {
+  transform: translateY(90deg);
+  z-index: -1;
+}
+
+.icon {
+  background-color: hsl(214, 23%, 21%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(25, 97%, 53%);
+}
+
+.textplace h1{
+  color: white;
+}
+.textplace p{
+  color: hsl(216, 12%, 54%);
+}
+
+
+.numbers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: hsl(216, 12%, 54%);
+
+}
+
+.numbers label {
+  background-color: hsl(214, 23%, 21%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.numbers label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+
+.form {
+  width: 100%;
+  margin-top: 20px;
+}
+.form input{
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 45px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border-radius: 40px;
+  line-height: 0.7;
+  letter-spacing: 0.143em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.form .submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+form [name="rate"] {
+  width: 50px;
+  opacity: 0;
+  position: absolute;
+  top: 1000000;
+}
+
+form [name="rate"]:checked+label {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.back img {
+  width: 150px;
+}
+
+.selected p {
+  padding: 5px 15px;
+  background-color: hsl(214, 23%, 24%);
+  font-weight: 100;
+  font-size: 14px;
+  border-radius: 15px;
+  color: hsl(25, 97%, 53%);
+}
